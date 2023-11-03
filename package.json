@@ -4,7 +4,10 @@
   "description": "StarterHub bff template",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "nest build",
+    "launch": "node dist/src/launcher/main",
+    "start": "nest start --watch",
+    "test": "jest --no-cache"
   },
   "author": "Julian Cabezas",
   "license": "ISC",
