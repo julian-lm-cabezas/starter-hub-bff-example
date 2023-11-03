@@ -10,7 +10,7 @@ export const getEnv = () => {
         },
         pingid: {
             pingUrl: process.env.PING_URL ?? 'https://idpb2e-rec.adeo.com',
-            baseUrl: process.env.RLSE_BFF_HOST ?? 'http://localhost:3000',
+            baseUrl: process.env.HOST ?? 'http://localhost:3000',
             webUrl: process.env.WEB_URL ?? 'http://localhost:8080',
             clientId: process.env.PING_CLIENT_ID ?? 'pingID',
             clientSecret: process.env.PING_CLIENT_SECRET ?? 'pingSecret',
