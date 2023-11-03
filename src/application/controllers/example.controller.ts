@@ -10,8 +10,8 @@ import { toDtoList } from "../mappers/example.dto.mapper";
 import { toModel } from "../mappers/example..model.mapper";
 
 
-@ApiTags('RLSE Delivery Location list')
-@Controller('delivery-location-list')
+@ApiTags('Examples')
+@Controller('examples')
 @UseGuards(AuthGuard)
 export class ExampleController {
 

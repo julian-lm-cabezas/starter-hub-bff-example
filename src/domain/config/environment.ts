@@ -2,7 +2,7 @@ import * as productInfo from '../../../product-info.json'
 
 export const getEnv = () => {
     return {
-        port: process.env.PORT ?? 3000,
+        port: Number(process.env.PORT ?? 3000),
         logLevel: process.env.LOG_LEVEL ?? 'debug',
         webHome:  process.env.WEB_URL ?? 'http://localhost:8080',
         api: {
