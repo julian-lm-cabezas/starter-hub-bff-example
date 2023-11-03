@@ -28,8 +28,7 @@ NodeJS BFF REST api for Ping authentication
 
 - validate user authentication & redirection through PingID
 - Determine user role
-- Proxy request calls to RLO API
-- obtain product images from DAMEO
+- Proxy request calls to Backend API
 
 ## Requirements
 
