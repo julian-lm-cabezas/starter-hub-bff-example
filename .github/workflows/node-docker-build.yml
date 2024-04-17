@@ -1,0 +1,20 @@
+name: Node CI - Build.
+on:
+  push: 
+    branches:
+      - '**'      
+    tags-ignore:
+      - '**'
+  release:
+    types: [published]
+
+jobs:
+  node-ci:
+    uses: adeo/lmes-cicd-github-actions-workflows/.github/workflows/node-docker-build.yml@v1
+    with:
+      product-global-name: 'adeo/{platform}/{product}'
+      service: '{product-ms}'
+      node-version: '20.11.0'
+      node-install-command: 'install'
+      node-build-command: 'build'
+      run-test-enabled: true

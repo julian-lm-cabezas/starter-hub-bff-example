@@ -12,11 +12,11 @@
   "author": "Julian Cabezas",
   "license": "ISC",
   "dependencies": {
-    "@lmes/bff-boot": "^1.2.0",
-    "@lmes/bff-logger": "^1.2.0",
-    "@lmes/bff-pingid": "^1.2.1",
-    "@nestjs/axios": "^3.0.0",
-    "axios": "^1.5.0",
+    "@lmes/bff-boot": "^1.3.0",
+    "@lmes/bff-logger": "^1.4.0",
+    "@lmes/bff-pingid": "^1.3.0",
+    "@nestjs/axios": "^3.0.1",
+    "axios": "^1.6.2",
     "cookie-parser": "^1.4.6",
     "date-fns": "^2.30.0"
   },
@@ -61,7 +61,6 @@
       "!**/*.(entity|model|dto).ts",
       "!src/domain/config/**",
       "!src/launcher/**",
-      "!**/auth.service.ts",
       "!**/index.ts"
     ],
     "coverageReporters": [
