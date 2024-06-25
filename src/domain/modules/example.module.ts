@@ -1,6 +1,6 @@
 
-import { ExampleController } from '@/application/controllers/example.controller';
-import { ExampleAdapter } from '@/infrastrcuture/adapters/example.adapter';
+import { ExampleController } from '@/infrastructure-inbounds/controllers/example.controller';
+import { ExampleAdapter } from '@/infrastrcuture-outbounds/adapters/example.adapter';
 import { Module } from '@nestjs/common';
 
 

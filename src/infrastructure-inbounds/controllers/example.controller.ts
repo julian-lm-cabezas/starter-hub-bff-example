@@ -1,9 +1,9 @@
 
 import { User } from "@/domain/models/user.model";
-import { ExampleAdapter } from "@/infrastrcuture/adapters/example.adapter";
+import { ExampleAdapter } from "@/infrastrcuture-outbounds/adapters/example.adapter";
 import { AuthGuard, CookieUser } from "@lmes/bff-pingid";
-import { Body, Controller, Delete, Get, Param, Post, Put, UseGuards } from "@nestjs/common";
-import { ApiBadRequestResponse, ApiNoContentResponse, ApiNotFoundResponse, ApiOkResponse, ApiTags } from "@nestjs/swagger";
+import { Body, Controller, Get, Post, UseGuards } from "@nestjs/common";
+import { ApiBadRequestResponse, ApiNoContentResponse, ApiOkResponse, ApiTags } from "@nestjs/swagger";
 import { ExampleDto } from "../dtos/example.dto";
 import { Example } from "@/domain/models/example.model";
 import { toDtoList } from "../mappers/example.dto.mapper";

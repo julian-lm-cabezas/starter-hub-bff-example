@@ -1,10 +1,10 @@
-import { ExampleController } from "@/application/controllers/example.controller";
-import { ExampleDto } from "@/application/dtos/example.dto";
+import { ExampleController } from "@/infrastructure-inbounds/controllers/example.controller";
+import { ExampleDto } from "@/infrastructure-inbounds/dtos/example.dto";
 import { Example } from "@/domain/models/example.model";
 import { User } from "@/domain/models/user.model";
 import { CoreModule } from "@/domain/modules/core.module";
 import { ExampleModule } from "@/domain/modules/example.module";
-import { ExampleAdapter } from "@/infrastrcuture/adapters/example.adapter";
+import { ExampleAdapter } from "@/infrastrcuture-outbounds/adapters/example.adapter";
 import { Test } from "@nestjs/testing";
 
 

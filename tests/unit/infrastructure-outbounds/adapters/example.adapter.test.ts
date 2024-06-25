@@ -5,7 +5,7 @@ jest.mock('../../../../src/domain/exceptions/http.client.exception', ()=>{
     }
 })
 import { exceptionHandler } from '@/domain/exceptions/http.client.exception'
-import { ExampleAdapter } from "@/infrastrcuture/adapters/example.adapter"
+import { ExampleAdapter } from "@/infrastrcuture-outbounds/adapters/example.adapter"
 import { Example } from '@/domain/models/example.model'
 
 describe('Example Adapter', ()=>{

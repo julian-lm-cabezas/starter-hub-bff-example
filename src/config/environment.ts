@@ -1,4 +1,4 @@
-import * as productInfo from '../../../product-info.json'
+import * as productInfo from '../../product-info.json'
 
 export const getEnv = () => {
     return {

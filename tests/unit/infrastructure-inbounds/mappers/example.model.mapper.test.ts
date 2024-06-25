@@ -1,5 +1,5 @@
-import { ExampleDto } from "@/application/dtos/example.dto"
-import { toModel } from "@/application/mappers/example..model.mapper"
+import { ExampleDto } from "@/infrastructure-inbounds/dtos/example.dto"
+import { toModel } from "@/infrastructure-inbounds/mappers/example..model.mapper"
 
 describe('Example model mapper', ()=>{
 

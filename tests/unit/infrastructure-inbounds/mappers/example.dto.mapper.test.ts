@@ -1,5 +1,5 @@
-import { ExampleDto } from "@/application/dtos/example.dto"
-import { toDto, toDtoList } from "@/application/mappers/example.dto.mapper"
+import { ExampleDto } from "@/infrastructure-inbounds/dtos/example.dto"
+import { toDto, toDtoList } from "@/infrastructure-inbounds/mappers/example.dto.mapper"
 import { Example } from "@/domain/models/example.model"
 
 

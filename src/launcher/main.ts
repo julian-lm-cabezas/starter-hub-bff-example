@@ -1,4 +1,4 @@
-import { getEnv } from '@/domain/config/environment'
+import { getEnv } from '@/config/environment'
 const { port, logLevel, pingid, webHome, tangram } = getEnv()
 
 import {DatadogLogger, DatadogOptions, LogLevel} from '@lmes/bff-logger'
