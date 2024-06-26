@@ -4,9 +4,9 @@ jest.mock('../../../../src/domain/exceptions/http.client.exception', ()=>{
         exceptionHandler: jest.fn()
     }
 })
-import { exceptionHandler } from '@/domain/exceptions/http.client.exception'
-import { ExampleAdapter } from "@/infrastrcuture-outbounds/adapters/example.adapter"
-import { Example } from '@/domain/models/example.model'
+import { exceptionHandler } from '@/application/exceptions/http.client.exception'
+import { ExampleAdapter } from "@/infrastructure-outbounds/adapters/example.adapter"
+import { Example } from '@/application/models/example.model'
 
 describe('Example Adapter', ()=>{
     let http: HttpService

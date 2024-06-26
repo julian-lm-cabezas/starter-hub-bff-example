@@ -1,13 +1,13 @@
 
-import { User } from "@/domain/models/user.model";
+import { User } from "@/application/models/user.model";
 import { AuthGuard, CookieUser } from "@lmes/bff-pingid";
 import { Body, Controller, Get, Post, UseGuards } from "@nestjs/common";
 import { ApiBadRequestResponse, ApiNoContentResponse, ApiOkResponse, ApiTags } from "@nestjs/swagger";
 import { ExampleDto } from "../dtos/example.dto";
-import { Example } from "@/domain/models/example.model";
+import { Example } from "@/application/models/example.model";
 import { toDtoList } from "../mappers/example.dto.mapper";
 import { toModel } from "../mappers/example..model.mapper";
-import { ExampleService } from "@/domain/services/example.service";
+import { ExampleService } from "@/application/services/example.service";
 
 
 @ApiTags('Examples')

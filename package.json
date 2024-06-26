@@ -16,6 +16,7 @@
     "@lmes/bff-logger": "^1.4.0",
     "@lmes/bff-pingid": "^1.3.0",
     "@nestjs/axios": "^3.0.1",
+    "@nestjs/common": "^10.3.9",
     "axios": "^1.6.2",
     "cookie-parser": "^1.4.6",
     "date-fns": "^2.30.0"

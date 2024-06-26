@@ -1,4 +1,4 @@
-import { exceptionHandler } from "@/domain/exceptions/http.client.exception"
+import { exceptionHandler } from "@/application/exceptions/http.client.exception"
 import { BadRequestException, NotFoundException, ServiceUnavailableException, ConflictException } from "@nestjs/common"
 
 

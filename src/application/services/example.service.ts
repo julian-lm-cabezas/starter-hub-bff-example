@@ -1,7 +1,7 @@
-import { ExampleAdapter } from "@/infrastrcuture-outbounds/adapters/example.adapter";
+import { ExampleAdapter } from "@/infrastructure-outbounds/adapters/example.adapter";
 import { Example } from "../models/example.model";
 import { ExampleServicePort } from "../ports/example.service.port";
-
+import { Injectable } from "@nestjs/common";
 
 @Injectable()
 export class ExampleService implements ExampleServicePort {
@@ -16,8 +16,4 @@ export class ExampleService implements ExampleServicePort {
         return this.adapter.save(example);
     }
     
-}
-
-function Injectable(): (target: typeof ExampleService) => void | typeof ExampleService {
-    throw new Error("Function not implemented.");
 }

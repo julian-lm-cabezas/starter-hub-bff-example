@@ -1,7 +1,7 @@
 
 import { ExampleController } from '@/infrastructure-inbounds/controllers/example.controller';
 import { Module } from '@nestjs/common';
-import { ExampleService } from '../../domain/services/example.service';
+import { ExampleService } from '@/application/services/example.service';
 import { ExampleAdapter } from '../adapters/example.adapter';
 
 
