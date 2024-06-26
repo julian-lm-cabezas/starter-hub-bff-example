@@ -1,4 +1,4 @@
-import { Example } from "@/domain/models/example.model";
+import { Example } from "@/application/models/example.model";
 import { ExampleDto } from "../dtos/example.dto";
 
 /**
@@ -8,9 +8,5 @@ import { ExampleDto } from "../dtos/example.dto";
  * @returns Example model
  */
 export const toModel = (dto: ExampleDto): Example => {
-    return {
-        name: dto.name,
-        age: dto.age,
-        dateOfBirth: new Date(dto.dateOfBirth)
-    }
+    return {... new Example(), ...dto} as Example
 }

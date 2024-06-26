@@ -1,7 +1,8 @@
 
 import { ExampleController } from '@/infrastructure-inbounds/controllers/example.controller';
-import { ExampleAdapter } from '@/infrastrcuture-outbounds/adapters/example.adapter';
 import { Module } from '@nestjs/common';
+import { ExampleService } from '../../domain/services/example.service';
+import { ExampleAdapter } from '../adapters/example.adapter';
 
 
 /**
@@ -9,6 +10,6 @@ import { Module } from '@nestjs/common';
  */
 @Module({
     controllers: [ExampleController],
-    providers: [ExampleAdapter]
+    providers: [ExampleService, ExampleAdapter]
 })
 export class ExampleModule {}

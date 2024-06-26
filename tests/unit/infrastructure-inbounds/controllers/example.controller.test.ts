@@ -1,16 +1,16 @@
 import { ExampleController } from "@/infrastructure-inbounds/controllers/example.controller";
 import { ExampleDto } from "@/infrastructure-inbounds/dtos/example.dto";
-import { Example } from "@/domain/models/example.model";
-import { User } from "@/domain/models/user.model";
-import { CoreModule } from "@/domain/modules/core.module";
-import { ExampleModule } from "@/domain/modules/example.module";
-import { ExampleAdapter } from "@/infrastrcuture-outbounds/adapters/example.adapter";
+import { Example } from "@/application/models/example.model";
+import { User } from "@/application/models/user.model";
+import { CoreModule } from "@/infrastructure-outbounds/modules/core.module";
+import { ExampleModule } from "@/infrastructure-outbounds/modules/example.module";
 import { Test } from "@nestjs/testing";
+import { ExampleService } from "@/application/services/example.service";
 
 
 describe('Example controller', ()=>{
     let controller: ExampleController
-    let adapter: ExampleAdapter
+    let adapter: ExampleService
     const example: Example = {
         name: 'name',
         age: 10,
@@ -19,7 +19,7 @@ describe('Example controller', ()=>{
 
     beforeEach(async () => {
         const moduleRef = await Test.createTestingModule({ imports: [ExampleModule, CoreModule]}).compile()
-        adapter = moduleRef.get<ExampleAdapter>(ExampleAdapter);
+        adapter = moduleRef.get<ExampleService>(ExampleService);
         controller = moduleRef.get<ExampleController>(ExampleController);
     });
       

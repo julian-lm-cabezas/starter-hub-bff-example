@@ -2,7 +2,7 @@
 /**
  *  Example Model.
  */
-export interface Example {
+export class Example {
     name: string
     age: number
     dateOfBirth: Date
