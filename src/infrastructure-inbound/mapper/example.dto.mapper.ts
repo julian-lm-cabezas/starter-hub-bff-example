@@ -8,7 +8,11 @@ import { ExampleDto } from "../dto/example.dto"
  * @returns ExampleDto
  */
 export const toDto = (model: Example): ExampleDto => {
-    return { ...new ExampleDto(), ...model } as ExampleDto
+    const dto: ExampleDto = new ExampleDto()
+    dto.name = model.name
+    dto.age = model.age
+    dto.dateOfBirth = model.dateOfBirth
+    return dto
 }
 
 /**

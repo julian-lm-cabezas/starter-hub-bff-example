@@ -5,7 +5,7 @@ import { Injectable } from "@nestjs/common"
 import { ExampleSystemNameDto } from "../dto/example.systemname.dto"
 import { toModelList } from "../mapper/example.model.mapper"
 import { exceptionHandler } from "@/application/exception/http.client.exception"
-import { toEntity } from "../mapper/example.systemname.dto.mapper"
+import { toDto } from "../mapper/example.dto.mapper"
 
 /**
  * Example service port implementation.
@@ -26,7 +26,7 @@ export class ExampleAdapter implements ExampleInfrastructurePort {
 
     save = async (example: Example): Promise<void> => {
         try{
-            await this.httpService.axiosRef.post('/examples', toEntity(example))
+            await this.httpService.axiosRef.post('/examples', toDto(example))
         }catch(err){
             throw exceptionHandler(err, 'Example')
         }

@@ -1,7 +1,5 @@
-import { exceptionHandler } from "@/application/exceptions/http.client.exception"
+import { exceptionHandler } from "@/application/exception/http.client.exception"
 import { BadRequestException, NotFoundException, ServiceUnavailableException, ConflictException } from "@nestjs/common"
-
-
 
 describe('Http Client Exception Handler', ()=>{
 

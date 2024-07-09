@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "nest build",
-    "launch": "node dist/src/launcher/main",
-    "start": "nest start --watch",
+    "start": "node dist/src/launcher/main",
+    "dev": "nest start --watch",
     "test": "jest --no-cache"
   },
   "author": "Julian Cabezas",

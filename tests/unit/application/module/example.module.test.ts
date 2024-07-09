@@ -1,9 +1,10 @@
 
 
-import { ExampleController } from '@/infrastructure-inbounds/controllers/example.controller';
-import { CoreModule } from '@/infrastructure-outbounds/modules/core.module';
-import { ExampleModule } from '@/infrastructure-outbounds/modules/example.module';
-import { ExampleAdapter } from '@/infrastructure-outbounds/http/adapters/example.adapter';
+
+import { ExampleController } from '@/infrastructure-inbound/controller/example.controller';
+import { ExampleAdapter } from '@/infrastructure-outbound/http/system-name/adapter/example.adapter';
+import { CoreModule } from '@/launcher/module/core.module';
+import { ExampleModule } from '@/launcher/module/example.module';
 import { Test } from '@nestjs/testing';
 
 

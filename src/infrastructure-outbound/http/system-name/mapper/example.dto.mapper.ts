@@ -7,7 +7,7 @@ import { ExampleSystemNameDto } from "../dto/example.systemname.dto";
  * @param model Example
  * @returns ExampleSystemNameDto
  */
-export const toEntity = (model: Example): ExampleSystemNameDto => {
+export const toDto = (model: Example): ExampleSystemNameDto => {
     return {
         name: model.name,
         age: model.age,

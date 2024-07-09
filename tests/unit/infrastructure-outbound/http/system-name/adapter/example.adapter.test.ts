@@ -1,12 +1,14 @@
+import { Example } from "@/application/domain/model/example.model"
+import { exceptionHandler } from "@/application/exception/http.client.exception"
+import { ExampleAdapter } from "@/infrastructure-outbound/http/system-name/adapter/example.adapter"
 import { HttpService } from "@nestjs/axios"
-jest.mock('../../../../src/domain/exceptions/http.client.exception', ()=>{
+
+jest.mock('../../../../../../src/application/exception/http.client.exception', ()=>{
     return {
         exceptionHandler: jest.fn()
     }
 })
-import { exceptionHandler } from '@/application/exceptions/http.client.exception'
-import { ExampleAdapter } from "@/infrastructure-outbounds/http/adapters/example.adapter"
-import { Example } from '@/application/domain/models/example.model'
+
 
 describe('Example Adapter', ()=>{
     let http: HttpService
@@ -45,7 +47,7 @@ describe('Example Adapter', ()=>{
 
     it('saves example', async ()=>{
         jest.spyOn(http.axiosRef,'post').mockResolvedValueOnce({status: 200, data: {}})
-        const response = await client.save(example)
+        await client.save(example)
         expect(http.axiosRef.post).toHaveBeenCalledWith("/examples", example)
        
     })

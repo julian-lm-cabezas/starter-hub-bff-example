@@ -1,12 +1,11 @@
-import { ExampleController } from "@/infrastructure-inbounds/controllers/example.controller";
-import { ExampleDto } from "@/infrastructure-inbounds/dtos/example.dto";
-import { Example } from "@/application/domain/models/example.model";
-import { User } from "@/application/domain/models/user.model";
-import { CoreModule } from "@/infrastructure-outbounds/modules/core.module";
-import { ExampleModule } from "@/infrastructure-outbounds/modules/example.module";
+import { Example } from "@/application/domain/model/example.model";
+import { User } from "@/application/domain/model/user.model";
+import { ExampleService } from "@/application/service/example.service";
+import { ExampleController } from "@/infrastructure-inbound/controller/example.controller";
+import { ExampleDto } from "@/infrastructure-inbound/dto/example.dto";
+import { CoreModule } from "@/launcher/module/core.module";
+import { ExampleModule } from "@/launcher/module/example.module";
 import { Test } from "@nestjs/testing";
-import { ExampleService } from "@/application/services/example.service";
-
 
 describe('Example controller', ()=>{
     let controller: ExampleController
