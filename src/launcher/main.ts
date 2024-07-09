@@ -5,9 +5,9 @@ import {DatadogLogger, DatadogOptions, LogLevel} from '@lmes/bff-logger'
 import { LmesBFF } from '@lmes/bff-boot';
 import * as cookieParser from 'cookie-parser';
 import { LoggerService } from '@nestjs/common';
+import { CoreModule } from './module/core.module';
+import { ExampleModule } from './module/example.module';
 
-import { ExampleModule } from '@/infrastructure-outbounds/modules/example.module';
-import { CoreModule } from '@/infrastructure-outbounds/modules/core.module';
 
 // Datadog options object
 const datadogOpts: DatadogOptions = {
