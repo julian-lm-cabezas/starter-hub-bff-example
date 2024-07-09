@@ -25,7 +25,7 @@ export const exceptionHandler = (err: any, entity: string) : HttpException => {
 /**
  * Extracts existing http exception message or given error message.
  * 
- * @param param0 
+ * @param param error object 
  * @returns string error
  */
 export const getErrMessage = ({response, message}: any): string => response?.data?.message ?? message

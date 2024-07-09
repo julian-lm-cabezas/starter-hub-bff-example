@@ -2,7 +2,7 @@ import { AuthModule, PingOptions } from "@lmes/bff-pingid"
 import { HttpModule } from "@nestjs/axios"
 import { Global, Module } from "@nestjs/common"
 import { getEnv } from "@/config/environment"
-import { User, UserMapper } from "../../domain/models/user.model"
+import { User, UserMapper } from "@/application/domain/model/user.model"
 
 const  {api, pingid} = getEnv()
 const opts: PingOptions = pingid

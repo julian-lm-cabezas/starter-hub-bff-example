@@ -1,6 +1,5 @@
 import { ApiProperty } from "@nestjs/swagger";
 import { IsString, IsNumber } from 'class-validator'
-import { Type} from 'class-transformer'
 
 export class ExampleDto {
 

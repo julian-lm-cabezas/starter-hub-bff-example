@@ -1,7 +1,7 @@
 import { ExampleController } from "@/infrastructure-inbounds/controllers/example.controller";
 import { ExampleDto } from "@/infrastructure-inbounds/dtos/example.dto";
-import { Example } from "@/application/models/example.model";
-import { User } from "@/application/models/user.model";
+import { Example } from "@/application/domain/models/example.model";
+import { User } from "@/application/domain/models/user.model";
 import { CoreModule } from "@/infrastructure-outbounds/modules/core.module";
 import { ExampleModule } from "@/infrastructure-outbounds/modules/example.module";
 import { Test } from "@nestjs/testing";

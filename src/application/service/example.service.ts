@@ -1,8 +1,11 @@
-import { ExampleAdapter } from "@/infrastructure-outbounds/adapters/example.adapter";
-import { Example } from "../models/example.model";
-import { ExampleServicePort } from "../ports/example.service.port";
+import { ExampleAdapter } from "@/infrastructure-outbound/http/system-name/adapter/example.adapter";
+import { Example } from "../domain/model/example.model";
 import { Injectable } from "@nestjs/common";
+import { ExampleServicePort } from "../port/inbound/example.service.port";
 
+/**
+ * ExampleServicePort implementation.
+ */
 @Injectable()
 export class ExampleService implements ExampleServicePort {
     

@@ -1,4 +1,4 @@
-import { Example } from "../models/example.model";
+import { Example } from "@/application/domain/model/example.model"
 
 /**
  * Example Service Port.

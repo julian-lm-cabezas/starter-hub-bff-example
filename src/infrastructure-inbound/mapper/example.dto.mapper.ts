@@ -1,5 +1,5 @@
-import { Example } from "@/application/models/example.model";
-import { ExampleDto } from "../dtos/example.dto";
+import { Example } from "@/application/domain/model/example.model"
+import { ExampleDto } from "../dto/example.dto"
 
 /**
  * Maps Example model to dto

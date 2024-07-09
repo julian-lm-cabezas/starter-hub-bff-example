@@ -1,15 +1,17 @@
 
-import { User } from "@/application/models/user.model";
+import { Example } from "@/application/domain/model/example.model";
+import { User } from "@/application/domain/model/user.model";
+import { ExampleService } from "@/application/service/example.service";
 import { AuthGuard, CookieUser } from "@lmes/bff-pingid";
 import { Body, Controller, Get, Post, UseGuards } from "@nestjs/common";
 import { ApiBadRequestResponse, ApiNoContentResponse, ApiOkResponse, ApiTags } from "@nestjs/swagger";
-import { ExampleDto } from "../dtos/example.dto";
-import { Example } from "@/application/models/example.model";
-import { toDtoList } from "../mappers/example.dto.mapper";
-import { toModel } from "../mappers/example..model.mapper";
-import { ExampleService } from "@/application/services/example.service";
+import { ExampleDto } from "../dto/example.dto";
+import { toModel } from "../mapper/example..model.mapper";
+import { toDtoList } from "../mapper/example.dto.mapper";
 
-
+/**
+ * Example controller.
+ */
 @ApiTags('Examples')
 @Controller('examples')
 @UseGuards(AuthGuard)
