@@ -1,9 +1,9 @@
 import { Example } from "@/application/domain/model/example.model"
 
 /**
- * Example Infrastructure Port.
+ * Example Service Port.
  */
-export interface ExampleInfrastructurePort {
+export interface ExampleUseCasePort {
 
     findAll(): Promise<Array<Example>>
 

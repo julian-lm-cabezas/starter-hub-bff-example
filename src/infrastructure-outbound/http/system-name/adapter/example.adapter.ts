@@ -1,5 +1,5 @@
 import { Example } from "@/application/domain/model/example.model"
-import { ExampleInfrastructurePort } from "@/application/port/outbound/example.infrastructure.port"
+import { ExamplePort } from "@/application/port/outbound/example.port"
 import { HttpService } from "@nestjs/axios"
 import { Injectable } from "@nestjs/common"
 import { ExampleSystemNameDto } from "../dto/example.dto"
@@ -11,7 +11,7 @@ import { toDto } from "../mapper/example.model.to.dto.mapper"
  * Example service port implementation.
  */
 @Injectable()
-export class ExampleAdapter implements ExampleInfrastructurePort {
+export class ExampleAdapter implements ExamplePort {
     
     constructor(private readonly httpService: HttpService){}
 
