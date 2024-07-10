@@ -2,10 +2,10 @@ import { Example } from "@/application/domain/model/example.model"
 import { ExampleInfrastructurePort } from "@/application/port/outbound/example.infrastructure.port"
 import { HttpService } from "@nestjs/axios"
 import { Injectable } from "@nestjs/common"
-import { ExampleSystemNameDto } from "../dto/example.systemname.dto"
-import { toModelList } from "../mapper/example.model.mapper"
+import { ExampleSystemNameDto } from "../dto/example.dto"
+import { toModelList } from "../mapper/example.dto.to.model.mapper"
 import { exceptionHandler } from "@/application/exception/http.client.exception"
-import { toDto } from "../mapper/example.dto.mapper"
+import { toDto } from "../mapper/example.model.to.dto.mapper"
 
 /**
  * Example service port implementation.

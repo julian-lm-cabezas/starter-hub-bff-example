@@ -1,5 +1,5 @@
 import { Example } from "@/application/domain/model/example.model";
-import { ExampleSystemNameDto } from "../dto/example.systemname.dto";
+import { ExampleSystemNameDto } from "../dto/example.dto";
 
 /**
  * Maps model to dto.

@@ -6,8 +6,8 @@ import { AuthGuard, CookieUser } from "@lmes/bff-pingid";
 import { Body, Controller, Get, Post, UseGuards } from "@nestjs/common";
 import { ApiBadRequestResponse, ApiNoContentResponse, ApiOkResponse, ApiTags } from "@nestjs/swagger";
 import { ExampleDto } from "../dto/example.dto";
-import { toModel } from "../mapper/example..model.mapper";
-import { toDtoList } from "../mapper/example.dto.mapper";
+import { toModel } from "../mapper/example..dto.to.model.mapper";
+import { toDtoList } from "../mapper/example.model.to.dto.mapper";
 
 /**
  * Example controller.

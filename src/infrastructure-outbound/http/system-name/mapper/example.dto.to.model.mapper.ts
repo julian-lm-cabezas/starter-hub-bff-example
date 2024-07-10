@@ -1,4 +1,4 @@
-import { ExampleSystemNameDto } from "../dto/example.systemname.dto"
+import { ExampleSystemNameDto } from "../dto/example.dto"
 import { Example } from "@/application/domain/model/example.model"
 
 /**

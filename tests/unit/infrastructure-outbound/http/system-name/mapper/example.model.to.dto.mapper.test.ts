@@ -1,6 +1,6 @@
 import { Example } from "@/application/domain/model/example.model"
-import { ExampleSystemNameDto } from "@/infrastructure-outbound/http/system-name/dto/example.systemname.dto"
-import { toDto } from "@/infrastructure-outbound/http/system-name/mapper/example.dto.mapper"
+import { ExampleSystemNameDto } from "@/infrastructure-outbound/http/system-name/dto/example.dto"
+import { toDto } from "@/infrastructure-outbound/http/system-name/mapper/example.model.to.dto.mapper"
 
 describe('Systemname Example Dto mapper', ()=>{
 
