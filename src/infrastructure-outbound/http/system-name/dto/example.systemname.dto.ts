@@ -1,6 +1,6 @@
 
 /**
- *  Example Entity.
+ *  Example SystemName Dto.
  */
 export interface ExampleSystemNameDto {
     name: string
